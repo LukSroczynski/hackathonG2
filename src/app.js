@@ -6,8 +6,7 @@ import React from 'react'
 import { StyleRoot } from 'radium';
 import { render } from 'react-dom'
 import { Router, Route, Redirect, browserHistory, IndexRoute } from 'react-router'
-import Hello1 from './test1'
-import Hello2 from './test2'
+import Navigation from './layout/navigation/navigation'
 
 // eslint-disable-next-line no-unused-vars
 import styles from './app.css'
@@ -16,8 +15,8 @@ render(
   <StyleRoot>
     <Router history={browserHistory} onUpdate={scrollToTop}>
       <Route path="/" >
-        <IndexRoute component={Hello1} />
-        <Route path="contact" component={Hello2} />
+        <IndexRoute component={Navigation} />
+        <Route path="contact" component={Navigation} />
         <Redirect from="*" to="/" />
       </Route>
     </Router>

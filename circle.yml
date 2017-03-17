@@ -1,0 +1,6 @@
+machine:
+  node:
+    version: 6.0.0
+
+  environment:
+    CONTINUOUS_INTEGRATION: true
